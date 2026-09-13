@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Checkout — Demon Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="announce">This is a portfolio demo — checkout is simulated and no real payment is taken</div>
+
+<header class="site-header" data-site-header>
+  <div class="container">
+    <a href="index.html" class="logo">Demon<span>Store</span></a>
+    <nav class="nav-menu" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html#categories">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-btn" aria-label="View cart">
+        <i data-lucide="shopping-bag"></i>
+        <span class="badge-count is-hidden" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav-overlay" data-nav-overlay></div>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> <i data-lucide="chevron-right" style="width:14px;height:14px"></i> <a href="cart.html">Cart</a> <i data-lucide="chevron-right" style="width:14px;height:14px"></i> <span>Checkout</span></div>
+    <h1>Checkout</h1>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="container">
+    <div id="checkoutRoot"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:1px solid var(--color-border-dark); padding-block:22px;">
+      <span>© <span data-year></span> Demon Store. All rights reserved.</span>
+      <span>Website designed by <a href="contact.html">Demon Coder</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" data-toast>
+  <i data-lucide="check-circle"></i>
+  <span data-toast-message></span>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

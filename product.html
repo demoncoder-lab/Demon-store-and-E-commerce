@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — Demon Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="announce">Free delivery in Lagos on orders over <strong>₦50,000</strong> — use code <strong>DEMON50</strong> at checkout</div>
+
+<header class="site-header" data-site-header>
+  <div class="container">
+    <a href="index.html" class="logo">Demon<span>Store</span></a>
+    <nav class="nav-menu" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html#categories">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-search-toggle aria-label="Search products" aria-expanded="false">
+        <i data-lucide="search"></i>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="View cart">
+        <i data-lucide="shopping-bag"></i>
+        <span class="badge-count is-hidden" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+  <div class="search-panel" data-search-panel>
+    <form data-search-form>
+      <input type="search" name="q" placeholder="Search for products, e.g. headphones, dress, blender" autocomplete="off" />
+      <button type="submit" class="btn btn--primary btn--sm">Search</button>
+    </form>
+  </div>
+  <div class="nav-overlay" data-nav-overlay></div>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <i data-lucide="chevron-right" style="width:14px;height:14px"></i>
+      <a href="shop.html">Shop</a> <i data-lucide="chevron-right" style="width:14px;height:14px"></i>
+      <span id="breadcrumbProductName">Product</span>
+    </div>
+    <h1 id="pageProductName">Loading product…</h1>
+  </div>
+</div>
+
+<section class="section section--tight">
+  <div class="container">
+    <div id="productDetailRoot" class="product-detail"></div>
+
+    <div id="relatedProductsSection" style="margin-top:64px;">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">You may also like</span>
+          <h2>Related products</h2>
+        </div>
+      </div>
+      <div class="product-grid" id="relatedProductGrid"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">Demon<span>Store</span></a>
+        <p>Nigeria's fast-growing online store for electronics, fashion, home essentials and more — genuine products, honest prices, delivered to your door.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Twitter / X"><i data-lucide="twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shop Categories</h4>
+        <ul id="footerCategoryList"></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li class="footer-contact-item"><i data-lucide="map-pin"></i><address>14 Adeola Odeku Street, Victoria Island, Lagos</address></li>
+          <li class="footer-contact-item"><i data-lucide="phone"></i><a href="tel:+2348101234567">0810 123 4567</a></li>
+          <li class="footer-contact-item"><i data-lucide="mail"></i><a href="mailto:hello@demonstore.ng">hello@demonstore.ng</a></li>
+          <li class="footer-contact-item"><i data-lucide="message-circle"></i><a href="#" id="footerWhatsappLink" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Demon Store. All rights reserved.</span>
+      <span>Website designed by <a href="contact.html">Demon Coder</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="floatingWhatsapp" target="_blank" rel="noopener" class="whatsapp-float">
+  <i data-lucide="message-circle"></i>
+  <span>Chat with us</span>
+</a>
+
+<div class="toast" data-toast>
+  <i data-lucide="check-circle"></i>
+  <span data-toast-message></span>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
